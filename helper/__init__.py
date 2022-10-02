@@ -2,7 +2,6 @@ from rich.table import Table
 from rich.console import Console
 import time
 from random import random
-from typing import Dict, List
 
 class Rich_helper:
     """Rich Helper Class
@@ -23,7 +22,7 @@ class Rich_helper:
         self.console.log(f'[green] Success:[/green] [aquamarine1]{string} [/aquamarine1]')
     def sleeper(self, timer):
         time.sleep(timer)
-    def table_printer(self, columns: List[str], data: List(Dict)):
+    def table_printer(self, columns: list, data: list):
         table = Table(title="Recent News")
         styles = ["red", "cyan", "green", "magenta", "aquamarine1", "light_pink4", "sky_blue1"]
         for column in columns:
